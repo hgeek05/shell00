@@ -1,0 +1,234 @@
+This is the Z Shell configuration function for new users,
+zsh-newuser-install.
+You are seeing this message because you have no zsh startup files
+(the files .zshenv, .zprofile, .zshrc, .zlogin in the directory
+~).  This function can help you with a few settings that should
+make your use of the shell easier.
+
+You can:
+
+(q)  Quit and do nothing.  The function will be run again next time.
+
+(0)  Exit, creating the file ~/.zshrc containing just a comment.
+     That will prevent this function being run again.
+
+(1)  Continue to the main menu.
+
+(2)  Populate your ~/.zshrc with the configuration recommended
+     by the system administrator and exit (you will need to edit
+     the file by hand, if so desired).
+
+--- Type one of the keys in parentheses --- 0
+e2r10p1% fish
+Welcome to fish, the friendly interactive shell
+Type help for instructions on how to use fish
+hait-bel@e2r10p1 ~/D/s/ex06> cd ..
+hait-bel@e2r10p1 ~/D/shell00> ls
+ex00  ex01  ex02  ex03  ex04  ex05  ex06
+hait-bel@e2r10p1 ~/D/shell00> cd ..
+hait-bel@e2r10p1 ~/Desktop> ssh-keygen 
+Generating public/private rsa key pair.
+Enter file in which to save the key (/home/hait-bel/.ssh/id_rsa): 
+/home/hait-bel/.ssh/id_rsa already exists.
+Overwrite (y/n)? y
+Enter passphrase (empty for no passphrase): 
+Enter same passphrase again: 
+Your identification has been saved in /home/hait-bel/.ssh/id_rsa
+Your public key has been saved in /home/hait-bel/.ssh/id_rsa.pub
+The key fingerprint is:
+SHA256:tMY1KfX6C4Unl3xxR0zDFryyAN4Okhe3F53oZtc1z3I hait-bel@e2r10p1.1337.ma
+The key's randomart image is:
++---[RSA 3072]----+
+|          .   ===|
+|         + + o O+|
+|        = O + +.O|
+|       = B O B.=E|
+|        S * @ =o |
+|       .   B o   |
+|          . .    |
+|           . .   |
+|            .    |
++----[SHA256]-----+
+hait-bel@e2r10p1 ~/Desktop> cd ~/.ssh
+hait-bel@e2r10p1 ~/.ssh> ls
+id_rsa  id_rsa.pub
+hait-bel@e2r10p1 ~/.ssh> cat id_rsa.pub 
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCdrXLlmQQOYHzg36Xxy6mOVgMlvtPubB8PFR0Grnnui8m6Fw/NXpgCZluz2SIVd2Os6NFunw1jUJ/luJyOFwfNlbcJqHnCIIHbGQEObddVxVRhtH+zdP6FPY876v+Zkp0R6I076Q6IHxA9BMc4mEJF/7vq9gUJN48rb8pgqCigOf+P23miOwj5Ay8PddK197PWJeBx92HcPB0xwGFDvw8UwQiSzCeqBFkwQHs2m2IzrUrH8M5pc/WLedag2peZIBNUtwrVCQ6WQfEB3QSDMwEudidkHLIwC6yJD89aaT/jwhBydqEb66/VIGlxaK4hW8LHckHgmhENBNx0FyNDEHNGVEXxQjc+buApsDZFoRggypGut9p1cFzAWKnA1Pk3wS2ayTNgm+2lTzrDTs5++GCBff052waciIfkzqr6GdsKdGutHP2dgF88sxXMoP7aBHxT/TrSojZcQpBOHB3Aoze4fNuNf/7qmvTqlOrCI2VTecVEMQMoyR7F/LjsyuPnNaE= hait-bel@e2r10p1.1337.ma
+hait-bel@e2r10p1 ~/.ssh> cd ..
+hait-bel@e2r10p1 ~> cd Desktop/
+hait-bel@e2r10p1 ~/Desktop> ls
+shell00
+hait-bel@e2r10p1 ~/Desktop> git clone git@vogsphere-v2-bg.1337.ma:vogsphere/intra-uuid-e6fdf243-6f5b-469d-a407-5a79faa278e9-6809019-hait-bel Shell00
+Cloning into 'Shell00'...
+The authenticity of host 'vogsphere-v2-bg.1337.ma (10.23.1.223)' can't be established.
+ED25519 key fingerprint is SHA256:D6dKpNyqq6qhcjyyDCbT+JAY3gsqNmz7hDYqp2UG2rk.
+This key is not known by any other names
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added 'vogsphere-v2-bg.1337.ma' (ED25519) to the list of known hosts.
+git@vogsphere-v2-bg.1337.ma: Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+hait-bel@e2r10p1 ~/Desktop [128]> ls
+shell00
+hait-bel@e2r10p1 ~/Desktop> git clone git@vogsphere-v2-bg.1337.ma:vogsphere/intra-uuid-e6fdf243-6f5b-469d-a407-5a79faa278e9-6809019-hait-bel Shell00
+Cloning into 'Shell00'...
+warning: You appear to have cloned an empty repository.
+hait-bel@e2r10p1 ~/Desktop> ls
+shell00  Shell00
+hait-bel@e2r10p1 ~/Desktop> cd Shell00/
+hait-bel@e2r10p1 ~/D/Shell00 (master)> ls
+ex00  ex01  ex02  ex03  ex04  ex05  ex06
+hait-bel@e2r10p1 ~/D/Shell00 (master)> git add .
+hait-bel@e2r10p1 ~/D/Shell00 (master)> git commit -m "commit"
+[master (root-commit) e35603a] commit
+ Committer: Hiba Ait Belmoumene <hait-bel@e2r10p1.1337.ma>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 10 files changed, 8 insertions(+)
+ create mode 100644 ex00/z
+ create mode 100644 ex01/.testShell00.swo
+ create mode 100644 ex01/.testShell00.swp
+ create mode 100644 ex01/testShell00
+ create mode 100644 ex01/testShell00.tar
+ create mode 100644 ex02/exo2.tar
+ create mode 100644 ex03/id_rsa_pub
+ create mode 100644 ex04/midLS
+ create mode 100755 ex05/git_commit.sh
+ create mode 100644 ex06/git_ignore.sh
+hait-bel@e2r10p1 ~/D/Shell00 (master)> git push
+Enumerating objects: 19, done.
+Counting objects: 100% (19/19), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (8/8), done.
+Writing objects: 100% (19/19), 30.09 KiB | 481.00 KiB/s, done.
+Total 19 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: . Processing 1 references
+remote: Processed 1 references in total
+To vogsphere-v2-bg.1337.ma:vogsphere/intra-uuid-e6fdf243-6f5b-469d-a407-5a79faa278e9-6809019-hait-bel
+ * [new branch]      master -> master
+hait-bel@e2r10p1 ~/D/Shell00 (master)> cd ex06
+hait-bel@e2r10p1 ~/D/S/ex06 (master)> ls
+git_ignore.sh
+hait-bel@e2r10p1 ~/D/S/ex06 (master)> cat git_ignore.sh 
+git ls-files -i --exclude-standard
+
+hait-bel@e2r10p1 ~/D/S/ex06 (master)> cd /home/hait-bel/.ssh/
+hait-bel@e2r10p1 ~/.ssh> ls
+id_rsa  id_rsa.pub  known_hosts  known_hosts.old
+hait-bel@e2r10p1 ~/.ssh> rm -rf known hosts
+hait-bel@e2r10p1 ~/.ssh> rm -rf known_hosts
+hait-bel@e2r10p1 ~/.ssh> rm -rf known_hosts.old
+hait-bel@e2r10p1 ~/.ssh> ls
+id_rsa  id_rsa.pub
+hait-bel@e2r10p1 ~/.ssh> cp ./id_rsa.pub /home/hait-bel/Desktop/shell00/ex03/id_rsa_pub
+cp: cannot create regular file '/home/hait-bel/Desktop/shell00/ex03/id_rsa_pub': No such file or directory
+hait-bel@e2r10p1 ~/.ssh [1]> cd /home/hait-bel/Desktop/shell00/ex03
+cd: The directory “/home/hait-bel/Desktop/shell00/ex03” does not exist
+hait-bel@e2r10p1 ~/.ssh [1]> ls
+id_rsa  id_rsa.pub
+hait-bel@e2r10p1 ~/.ssh> touch id_rsa_pub
+hait-bel@e2r10p1 ~/.ssh> cp ./id_rsa.pub /home/hait-bel/Desktop/shell00/ex03/id_rsa_pub
+cp: cannot create regular file '/home/hait-bel/Desktop/shell00/ex03/id_rsa_pub': No such file or directory
+hait-bel@e2r10p1 ~/.ssh [1]> pwd
+/home/hait-bel/.ssh
+hait-bel@e2r10p1 ~/.ssh> cd ..
+hait-bel@e2r10p1 ~> cd ex03
+cd: The directory “ex03” does not exist
+hait-bel@e2r10p1 ~ [1]> cd Desktop
+hait-bel@e2r10p1 ~/Desktop> cd shell00
+hait-bel@e2r10p1 ~/D/shell00> cd ex03
+cd: The directory “ex03” does not exist
+hait-bel@e2r10p1 ~/D/shell00 [1]> pwd
+/home/hait-bel/Desktop/shell00
+hait-bel@e2r10p1 ~/D/shell00> cd ex03
+cd: The directory “ex03” does not exist
+hait-bel@e2r10p1 ~/D/shell00 [1]> cd ..
+hait-bel@e2r10p1 ~/Desktop> cd Shell00
+hait-bel@e2r10p1 ~/D/Shell00 (master)> ls
+ex00  ex01  ex02  ex03  ex04  ex05  ex06
+hait-bel@e2r10p1 ~/D/Shell00 (master)> cd ex03
+hait-bel@e2r10p1 ~/D/S/ex03 (master)> pwd
+/home/hait-bel/Desktop/Shell00/ex03
+hait-bel@e2r10p1 ~/D/S/ex03 (master)> ls
+id_rsa_pub
+hait-bel@e2r10p1 ~/D/S/ex03 (master)> cat id_rsa_pub
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDw0VypUko8xJCETDTFURdAvWkHPPO9WHopyyaO2La/tHOWe5YvmTTBhKTZqXnheY25Vo0pSom0SrYrhap+lH3xQzjvvY86CTjjAg/70XqD8E693ByJl6DgvGOt7Q7Gqw6CNVh7r1ufh6Kcr83MYLooJRIzr87IvIbCndtAwDX7+5JOB7IeLYqdr6u7oPyQXw1hhoShaFszxlNloRVWweejN2Z44LyaftePW8xZFgXuH0Jt2O/vydHpswmOUaluQw1T1RSjari/zU5GZxye8Ir3Sgbxg4PViCBS8mwbgJ0gwNuw0Z7q2nW45mWL6K3P0qYepJUTDJEbvkdnrm0ty0XM0NR8/xOYtsdLYlzetHPapia434Y0po0kRfF/hncmfFWZmyFFwTwqgtu8hlzi9Z81XSGG8b8Sg/dj6LxLGuZUruxj9787+jRrwMEVpvPS/SeM/eG6nTocSg8sMunHOsoOEi7ZuDOJLVe3fEDsVXokX+QNh5z2OU16iNpBhAed9Ns= hait-bel@e2r10p1.1337.ma
+hait-bel@e2r10p1 ~/D/S/ex03 (master)> cd ..
+hait-bel@e2r10p1 ~/D/Shell00 (master)> ls
+ex00  ex01  ex02  ex03  ex04  ex05  ex06
+hait-bel@e2r10p1 ~/D/Shell00 (master)> cd ..
+hait-bel@e2r10p1 ~/Desktop> ls
+shell00  Shell00
+hait-bel@e2r10p1 ~/Desktop> cd Dhell00
+cd: The directory “Dhell00” does not exist
+hait-bel@e2r10p1 ~/Desktop [1]> cd Shell00
+hait-bel@e2r10p1 ~/D/Shell00 (master)> pwd
+/home/hait-bel/Desktop/Shell00
+hait-bel@e2r10p1 ~/D/Shell00 (master)> cd ex07
+cd: The directory “ex07” does not exist
+hait-bel@e2r10p1 ~/D/Shell00 (master) [1]> mkdir ex07
+hait-bel@e2r10p1 ~/D/Shell00 (master)> cd ex07
+hait-bel@e2r10p1 ~/D/S/ex07 (master)> cd ..
+hait-bel@e2r10p1 ~/D/Shell00 (master)> cd ex06
+hait-bel@e2r10p1 ~/D/S/ex06 (master)> ls
+git_ignore.sh
+hait-bel@e2r10p1 ~/D/S/ex06 (master)> vi git_ignore.sh 
+hait-bel@e2r10p1 ~/D/S/ex06 (master)> ls
+git_ignore.sh
+hait-bel@e2r10p1 ~/D/S/ex06 (master)> cat git_ignore.sh
+git ls-files --others --ignored --exclude-standard
+
+hait-bel@e2r10p1 ~/D/S/ex06 (master)> git add .
+
+hait-bel@e2r10p1 ~/D/S/ex06 (master)> git commit -m "commit"
+
+[master 4e555b2] commit
+ Committer: Hiba Ait Belmoumene <hait-bel@e2r10p1.1337.ma>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+hait-bel@e2r10p1 ~/D/S/ex06 (master)> git push
+
+The authenticity of host 'vogsphere-v2-bg.1337.ma (10.23.1.223)' can't be established.
+ED25519 key fingerprint is SHA256:D6dKpNyqq6qhcjyyDCbT+JAY3gsqNmz7hDYqp2UG2rk.
+This key is not known by any other names
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added 'vogsphere-v2-bg.1337.ma' (ED25519) to the list of known hosts.
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 355 bytes | 355.00 KiB/s, done.
+Total 4 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: . Processing 1 references
+remote: Processed 1 references in total
+To vogsphere-v2-bg.1337.ma:vogsphere/intra-uuid-e6fdf243-6f5b-469d-a407-5a79faa278e9-6809019-hait-bel
+   e35603a..4e555b2  master -> master
+hait-bel@e2r10p1 ~/D/S/ex06 (master)> cd ..
+hait-bel@e2r10p1 ~/D/Shell00 (master)> pwd
+/home/hait-bel/Desktop/Shell00
+hait-bel@e2r10p1 ~/D/Shell00 (master)> cd ex06
+hait-bel@e2r10p1 ~/D/S/ex06 (master)> cat git_ignore.sh
+git ls-files --others --ignored --exclude-standard
