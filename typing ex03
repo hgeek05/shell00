@@ -1,0 +1,60 @@
+pwd
+/home/hait-bel
+e2r10p1% cd Desktop
+e2r10p1% cd shell00
+e2r10p1% pwd
+/home/hait-bel/Desktop/shell00
+e2r10p1% cd ex 03
+cd: string not in pwd: ex
+e2r10p1% cd ex03
+e2r10p1% pwd
+/home/hait-bel/Desktop/shell00/ex03
+e2r10p1% ls 
+id_rsa_pub  id_rsa_pub.pub
+e2r10p1% rm ./*
+zsh: sure you want to delete all 2 files in /home/hait-bel/Desktop/shell00/ex03/. [yn]? y
+e2r10p1% ls
+e2r10p1% pwd
+/home/hait-bel/Desktop/shell00/ex03
+e2r10p1% cd ~./.ssh
+zsh: no such user or named directory: .
+e2r10p1% cd ~/.ssh 
+e2r10p1% ls
+e2r10p1% ls -lq
+total 0
+e2r10p1% ls -la
+total 4
+drwx------  2 hait-bel candidates    6 Aug 11 17:36 .
+drwx------ 18 hait-bel candidates 4096 Aug 11 18:30 ..
+e2r10p1% cd /home/hait-bel/Desktop/shell00/ex03
+
+e2r10p1% ssh-keygen
+Generating public/private rsa key pair.
+Enter file in which to save the key (/home/hait-bel/.ssh/id_rsa):  
+Enter passphrase (empty for no passphrase): 
+Enter same passphrase again: 
+Your identification has been saved in /home/hait-bel/.ssh/id_rsa
+Your public key has been saved in /home/hait-bel/.ssh/id_rsa.pub
+The key fingerprint is:
+SHA256:fDCldIZlK3VSXw44hqR+NmIMhxa+sWZ+Ox2vqnAi0hM hait-bel@e2r10p1.1337.ma
+The key's randomart image is:
++---[RSA 3072]----+
+|      . .+Xoo.. .|
+|     . +.O.++. + |
+|      * B .. .. .|
+|     . X +       |
+|  E   = S =      |
+| . . + . =..     |
+|. + o o .. o     |
+| . o + .... .    |
+|      ..oo..     |
++----[SHA256]-----+
+e2r10p1% cd /home/hait-bel/.ssh/
+e2r10p1% ls
+id_rsa	id_rsa.pub
+e2r10p1% cp ./id_rsa.pub /home/hait-bel/Desktop/shell00/ex03/id_rsa_pub
+e2r10p1% cd /home/hait-bel/Desktop/shell00/ex03
+e2r10p1% ls
+id_rsa_pub
+e2r10p1% 
+
