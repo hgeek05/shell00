@@ -1,0 +1,107 @@
+e2r10p1% pwd
+/home/hait-bel/shell00/ex03
+e2r10p1% ssh-keygen
+Generating public/private rsa key pair.
+Enter file in which to save the key (/home/hait-bel/.ssh/id_rsa): 
+/home/hait-bel/.ssh/id_rsa already exists.
+Overwrite (y/n)? n
+e2r10p1% 
+e2r10p1% ssh-keygen
+Generating public/private rsa key pair.
+Enter file in which to save the key (/home/hait-bel/.ssh/id_rsa): 
+/home/hait-bel/.ssh/id_rsa already exists.
+Overwrite (y/n)? y
+Enter passphrase (empty for no passphrase): 
+Enter same passphrase again: 
+Your identification has been saved in /home/hait-bel/.ssh/id_rsa
+Your public key has been saved in /home/hait-bel/.ssh/id_rsa.pub
+The key fingerprint is:
+SHA256:PU9zlqvlMFQBwQJBeK66HSUm8vAYDzffgor7ZRiTgBo hait-bel@e2r10p1.1337.ma
+The key's randomart image is:
++---[RSA 3072]----+
+|       o+o .oo.  |
+|.     . . . .  . |
+|E      o   .  .  |
+|.o .    ..   . . |
+|. O + o.S o + +  |
+|   # *.+   = + . |
+|  o B.+ .   + o  |
+| . +.. o     *   |
+|ooo ...     . .  |
++----[SHA256]-----+
+e2r10p1% cd .ssh
+cd: no such file or directory: .ssh
+e2r10p1% cat *.pub
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDdJXmiApaIdaH+vQmB0nnJeEX2AuU+gpuTUQ7our1570h5LEASvRdiZj0rwBhcAwAbJSipyjvFZ2nA5HbrAR81288FRYrRXSiiWd7Wyj3AT/b2SH5qpsE/9UczMo3ck3pIDAXVHsUt+JmsvhX4aqW0YsesWYOfkqPioyDKsDjr6tX6f4deUXwhNl2+hFthElRdQ6nWPwl5WH9Gw2wLdOS2WbQdsYsTlV23ktubQQpr97iJQQxJkOfQTV6quxtfqHGehJZpsa1eS4EHHwhVDGRyecWKcKWT349GUvOGqu0IkaMvRfdTOZXxwo5qq3nY1bwAkZdTSQa1oT2bJ+4Es6HJQwEbXHFlySThVcP2oa6akHJ+pgr8TUCgDa2THdNyU1YzfSMXi5wHKXv+E04j2WAn7t6KQsrXJcwt+aOkOTzXhLEout6tgDHzJhDdhwTNLpO5ppcNyFa1fz4kYCi7OHvUuJOkPyQtFo7Bo9KiaEj+iiffAPeq9CeF632b49Tu3Rk= hait-bel@e2r10p1.1337.ma
+e2r10p1% history                
+  182  cd ex03
+  183  pwd
+  184  ls
+  185  ssh-keygen
+  186  PWD
+  187  pwd
+  188  ls
+  189  ssh -keygen
+  190  ssh-keygen
+  191  cd .ssh
+  192  clear
+  193  pwd
+  194  ssh-keygen
+  195  ssh-keygen
+  196  cd .ssh
+  197  cat *.pub
+e2r10p1% cd ..
+e2r10p1% mkdir ex04
+e2r10p1% cd ex04
+e2r10p1% pwd
+/home/hait-bel/Desktop/shell00/ex04
+e2r10p1% ls
+e2r10p1% ls -tmp
+e2r10p1% ls
+e2r10p1% ls -l                
+total 0
+e2r10p1% ls
+e2r10p1% history
+  192  clear
+  193  pwd
+  194  ssh-keygen
+  195  ssh-keygen
+  196  cd .ssh
+  197  cat *.pub
+  198  history
+  199  cd ..
+  200  mkdir ex04
+  201  cd ex04
+  202  pwd
+  203  ls
+  204  ls -tmp
+  205  ls
+  206  ls -l
+  207  ls
+e2r10p1% cd ex04
+cd: no such file or directory: ex04
+e2r10p1% cd ex04
+cd: no such file or directory: ex04
+e2r10p1% pwd  
+/home/hait-bel/Desktop/shell00/ex04
+e2r10p1% touch midLS
+e2r10p1% ls
+midLS
+e2r10p1%  echo "ls-tmp" > midLS
+
+e2r10p1% cd ..
+e2r10p1% pwd
+/home/hait-bel/Desktop/shell00
+e2r10p1% ls -tmp
+ex04/, ex03/, ex02/, ex01/, ex00/
+e2r10p1% ls
+ex00  ex01  ex02  ex03	ex04
+e2r10p1% ls -tmp
+ex04/, ex03/, ex02/, ex01/, ex00/
+e2r10p1% cd ex04
+e2r10p1% touch midLS
+e2r10p1% ls
+midLS
+e2r10p1% echo "ls-tmp" > midLS
+e2r10p1% cat midLS
+ls-tmp
