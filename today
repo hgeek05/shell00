@@ -1,0 +1,393 @@
+hait-bel@e2r9p3 ~> pwd
+/home/hait-bel
+hait-bel@e2r9p3 ~> cd Desktop/
+hait-bel@e2r9p3 ~/Desktop> cd Shell00
+hait-bel@e2r9p3 ~/D/Shell00 (master)> ls
+ex00  ex01  ex02  ex03  ex04  ex05  ex06  ex07
+hait-bel@e2r9p3 ~/D/Shell00 (master)> cd ex07
+hait-bel@e2r9p3 ~/D/S/ex07 (master)> ls
+hait-bel@e2r9p3 ~/D/S/ex07 (master)> cd ..
+hait-bel@e2r9p3 ~/D/Shell00 (master)> ls
+ex00  ex01  ex02  ex03  ex04  ex05  ex06  ex07
+hait-bel@e2r9p3 ~/D/Shell00 (master)> cd ex06
+hait-bel@e2r9p3 ~/D/S/ex06 (master)> ls
+git_ignore.sh
+hait-bel@e2r9p3 ~/D/S/ex06 (master)> cd ..
+hait-bel@e2r9p3 ~/D/Shell00 (master)> cd ex05
+hait-bel@e2r9p3 ~/D/S/ex05 (master)> ls
+git_commit.sh
+hait-bel@e2r9p3 ~/D/S/ex05 (master)> cat git_commit.sh
+#!/bin/sh
+git log -n 5 --format = '%H'
+hait-bel@e2r9p3 ~/D/S/ex05 (master)> vi git_commit.sh
+hait-bel@e2r9p3 ~/D/S/ex05 (master)> cat git_commit.sh
+#!/bin/sh
+git log -n 5 --format = '%H'
+hait-bel@e2r9p3 ~/D/S/ex05 (master)> cd ..
+hait-bel@e2r9p3 ~/D/Shell00 (master)> pwd
+/home/hait-bel/Desktop/Shell00
+hait-bel@e2r9p3 ~/D/Shell00 (master)> git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+hait-bel@e2r9p3 ~/D/Shell00 (master)> pwd
+/home/hait-bel/Desktop/Shell00
+hait-bel@e2r9p3 ~/D/Shell00 (master)> ls
+ex00  ex01  ex02  ex03  ex04  ex05  ex06  ex07
+hait-bel@e2r9p3 ~/D/Shell00 (master)> cd ex07
+hait-bel@e2r9p3 ~/D/S/ex07 (master)> ls
+hait-bel@e2r9p3 ~/D/S/ex07 (master)> pwd
+/home/hait-bel/Desktop/Shell00/ex07
+hait-bel@e2r9p3 ~/D/S/ex07 (master)> cd ..
+hait-bel@e2r9p3 ~/D/Shell00 (master)> cd ex05
+hait-bel@e2r9p3 ~/D/S/ex05 (master)> pwd
+/home/hait-bel/Desktop/Shell00/ex05
+hait-bel@e2r9p3 ~/D/S/ex05 (master)> ls
+git_commit.sh
+hait-bel@e2r9p3 ~/D/S/ex05 (master)> vi git_commit.sh
+hait-bel@e2r9p3 ~/D/S/ex05 (master)> cd ..
+hait-bel@e2r9p3 ~/D/Shell00 (master)> ls
+ex00  ex01  ex02  ex03  ex04  ex05  ex06  ex07
+hait-bel@e2r9p3 ~/D/Shell00 (master)> cd ex06
+hait-bel@e2r9p3 ~/D/S/ex06 (master)> 
+hait-bel@e2r9p3 ~/D/S/ex06 (master)> ls
+git_ignore.sh
+hait-bel@e2r9p3 ~/D/S/ex06 (master)> vi git_ignore.sh
+hait-bel@e2r9p3 ~/D/S/ex06 (master)> cat git_ignore.sh
+#!/bin/sh
+git ls-files --others --ignored --exclude-standard
+
+hait-bel@e2r9p3 ~/D/S/ex06 (master)> ls
+git_ignore.sh
+hait-bel@e2r9p3 ~/D/S/ex06 (master)> cat git_ignore.sh
+#!/bin/sh
+git ls-files --others --ignored --exclude-standard
+
+hait-bel@e2r9p3 ~/D/S/ex06 (master)> cd ..
+hait-bel@e2r9p3 ~/D/Shell00 (master)> ls
+ex00  ex01  ex02  ex03  ex04  ex05  ex06  ex07
+hait-bel@e2r9p3 ~/D/Shell00 (master)> cd ex07
+hait-bel@e2r9p3 ~/D/S/ex07 (master)> cd ..
+hait-bel@e2r9p3 ~/D/Shell00 (master)> pwd
+/home/hait-bel/Desktop/Shell00
+hait-bel@e2r9p3 ~/D/Shell00 (master)> mkdir  test
+hait-bel@e2r9p3 ~/D/Shell00 (master)> cd test
+hait-bel@e2r9p3 ~/D/S/test (master)> ls
+hait-bel@e2r9p3 ~/D/S/test (master)> ls -a
+.  ..
+hait-bel@e2r9p3 ~/D/S/test (master)> git init
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint: 
+hint: 	git config --global init.defaultBranch <name>
+hint: 
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint: 
+hint: 	git branch -m <name>
+Initialized empty Git repository in /home/hait-bel/Desktop/Shell00/test/.git/
+hait-bel@e2r9p3 ~/D/S/test (master)> ls -la
+total 0
+drwxr-xr-x  3 hait-bel candidates  18 Aug 12 10:42 .
+drwxr-xr-x 12 hait-bel candidates 126 Aug 12 10:41 ..
+drwxr-xr-x  7 hait-bel candidates 119 Aug 12 10:42 .git
+hait-bel@e2r9p3 ~/D/S/test (master)> toouch add a
+Command 'toouch' not found, did you mean:
+  command 'touch' from deb coreutils (8.32-4.1ubuntu1.2)
+Try: apt install <deb name>
+hait-bel@e2r9p3 ~/D/S/test (master) [127]> touch add a
+hait-bel@e2r9p3 ~/D/S/test (master)> git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	a
+	add
+
+nothing added to commit but untracked files present (use "git add" to track)
+hait-bel@e2r9p3 ~/D/S/test (master)> git commit -m "add a"
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	a
+	add
+
+nothing added to commit but untracked files present (use "git add" to track)
+hait-bel@e2r9p3 ~/D/S/test (master) [1]> git log
+fatal: your current branch 'master' does not have any commits yet
+hait-bel@e2r9p3 ~/D/S/test (master) [128]> pwd
+/home/hait-bel/Desktop/Shell00/test
+hait-bel@e2r9p3 ~/D/S/test (master)> rm -rf
+hait-bel@e2r9p3 ~/D/S/test (master)> rm -rf test
+hait-bel@e2r9p3 ~/D/S/test (master)> pwd
+/home/hait-bel/Desktop/Shell00/test
+hait-bel@e2r9p3 ~/D/S/test (master)> cd ..
+hait-bel@e2r9p3 ~/D/Shell00 (master)> cd shell00
+cd: The directory “shell00” does not exist
+hait-bel@e2r9p3 ~/D/Shell00 (master) [1]> cd Shell00
+cd: The directory “Shell00” does not exist
+hait-bel@e2r9p3 ~/D/Shell00 (master) [1]> cd S
+cd: The directory “S” does not exist
+hait-bel@e2r9p3 ~/D/Shell00 (master) [1]> pwd
+/home/hait-bel/Desktop/Shell00
+hait-bel@e2r9p3 ~/D/Shell00 (master)> cd ex07
+hait-bel@e2r9p3 ~/D/S/ex07 (master)> ls
+hait-bel@e2r9p3 ~/D/S/ex07 (master)> cd ..
+hait-bel@e2r9p3 ~/D/Shell00 (master)> ls
+ex00  ex01  ex02  ex03  ex04  ex05  ex06  ex07  test
+hait-bel@e2r9p3 ~/D/Shell00 (master)> rm -r test
+rm: remove write-protected regular file 'test/.git/objects/4b/825dc642cb6eb9a060e54bf8d69288fbee4904'? rm -rf test
+rm: cannot remove 'test/.git/objects/4b': Directory not empty
+hait-bel@e2r9p3 ~/D/Shell00 (master) [1]> ls
+ex00  ex01  ex02  ex03  ex04  ex05  ex06  ex07  test
+hait-bel@e2r9p3 ~/D/Shell00 (master)> rm test
+rm: cannot remove 'test': Is a directory
+hait-bel@e2r9p3 ~/D/Shell00 (master) [1]> rm -rf test
+hait-bel@e2r9p3 ~/D/Shell00 (master)> cd ..
+hait-bel@e2r9p3 ~/Desktop> ls
+shell00  Shell00
+hait-bel@e2r9p3 ~/Desktop> cd Shell00
+hait-bel@e2r9p3 ~/D/Shell00 (master)> pwd
+/home/hait-bel/Desktop/Shell00
+hait-bel@e2r9p3 ~/D/Shell00 (master)> ls
+ex00  ex01  ex02  ex03  ex04  ex05  ex06  ex07
+hait-bel@e2r9p3 ~/D/Shell00 (master)> cd ex07
+hait-bel@e2r9p3 ~/D/S/ex07 (master)> cd ..
+hait-bel@e2r9p3 ~/D/Shell00 (master)> git log
+commit 4e555b26f46e253d998cf4c8e9e2d1f19d299e64 (HEAD -> master, origin/master)
+Author: Hiba Ait Belmoumene <hait-bel@e2r10p1.1337.ma>
+Date:   Mon Aug 11 20:37:23 2025 +0100
+
+    commit
+
+commit e35603aa9b96f1a4600bcedd90ced0a9549c8dd3
+Author: Hiba Ait Belmoumene <hait-bel@e2r10p1.1337.ma>
+Date:   Mon Aug 11 20:14:09 2025 +0100
+
+    commit
+hait-bel@e2r9p3 ~/D/Shell00 (master)> cd ex07
+hait-bel@e2r9p3 ~/D/S/ex07 (master)> man patch
+hait-bel@e2r9p3 ~/D/S/ex07 (master)>   
+hait-bel@e2r9p3 ~/D/S/ex07 (master)> cat -e a
+cat: a: No such file or directory
+hait-bel@e2r9p3 ~/D/S/ex07 (master) [1]> patch a sw.diff -o b 
+patch: **** Can't open patch file sw.diff : No such file or directory
+hait-bel@e2r9p3 ~/D/S/ex07 (master) [2]> cd ..
+hait-bel@e2r9p3 ~/D/Shell00 (master)> pwd
+/home/hait-bel/Desktop/Shell00
+hait-bel@e2r9p3 ~/D/Shell00 (master)> cd ..
+hait-bel@e2r9p3 ~/Desktop> cd ..
+hait-bel@e2r9p3 ~> cd Downloads 
+hait-bel@e2r9p3 ~/Downloads> patch a sw.diff -o b 
+
+patch: **** Can't open patch file sw.diff : No such file or directory
+hait-bel@e2r9p3 ~/Downloads [2]> cd resources
+hait-bel@e2r9p3 ~/D/resources> patch a sw.diff -o b 
+
+patching file b (read from a)
+hait-bel@e2r9p3 ~/D/resources> cat -e a
+STARWARS$
+Episode IV, A NEW HOPE It is a period of civil war.$
+$
+Rebel spaceships, striking from a hidden base, have won their first victory against the evil Galactic Empire.$
+During the battle, Rebel spies managed to steal secret plans to the Empire's ultimate weapon, the DEATH STAR,$
+an armored space station with enough power to destroy an entire planet.$
+$
+Pursued by the Empire's sinister agents, Princess Leia races home aboard her starship, custodian of the stolen plans that can save her people and restore freedom to the galaxy...$
+$
+hait-bel@e2r9p3 ~/D/resources> diff a b > sw.diff 
+hait-bel@e2r9p3 ~/D/resources [1]> cd ..
+hait-bel@e2r9p3 ~/Downloads> pwd
+/home/hait-bel/Downloads
+hait-bel@e2r9p3 ~/Downloads> cd ..
+hait-bel@e2r9p3 ~> pwd
+/home/hait-bel
+hait-bel@e2r9p3 ~> cd Desktop
+hait-bel@e2r9p3 ~/Desktop> cd Shell00
+hait-bel@e2r9p3 ~/D/Shell00 (master)> ls
+ex00  ex01  ex02  ex03  ex04  ex05  ex06  ex07
+hait-bel@e2r9p3 ~/D/Shell00 (master)> cp sw.diff Downloads/resources/to/Shell00/ex07
+cp: cannot stat 'sw.diff': No such file or directory
+hait-bel@e2r9p3 ~/D/Shell00 (master) [1]> cd ex07
+hait-bel@e2r9p3 ~/D/S/ex07 (master)> patch a sw.diff -o b
+patching file b (read from a)
+hait-bel@e2r9p3 ~/D/S/ex07 (master)> cat -e a
+STARWARS$
+Episode IV, A NEW HOPE It is a period of civil war.$
+$
+Rebel spaceships, striking from a hidden base, have won their first victory against the evil Galactic Empire.$
+During the battle, Rebel spies managed to steal secret plans to the Empire's ultimate weapon, the DEATH STAR,$
+an armored space station with enough power to destroy an entire planet.$
+$
+Pursued by the Empire's sinister agents, Princess Leia races home aboard her starship, custodian of the stolen plans that can save her people and restore freedom to the galaxy...$
+$
+hait-bel@e2r9p3 ~/D/S/ex07 (master)> diff a b > sw.diff
+hait-bel@e2r9p3 ~/D/S/ex07 (master) [1]> cat b
+Episode V, A NEW H0PE It is a period of civil war
+Rebel spaceships, striking from a hidden base, have won their first victory against the evil Galactic Empire. 
+During the battle, Rebel spies managed to steal secret plans to the Empire's ultimate weapon, the STAR DEATH, an armored space station with enough power to destroy an entire planet.
+
+
+Pursued by the Empire's sinister agents,
+Princess Mehdi races home aboard her starship, custodian of the stolen plans that can save her people and restore the dictatorship to the galaxie..
+
+
+
+
+hait-bel@e2r9p3 ~/D/S/ex07 (master)> git clone git@vogsphere-v2-bg.1337.ma:vogsphere/intra-uuid-e6fdf243-6f5b-469d-a407-5a79faa278e9-6809019-hait-bel Shell00
+Cloning into 'Shell00'...
+remote: Enumerating objects: 23, done.
+remote: Counting objects: 100% (23/23), done.
+remote: Compressing objects: 100% (11/11), done.
+remote: Total 23 (delta 3), reused 0 (delta 0)
+Receiving objects: 100% (23/23), 30.39 KiB | 610.00 KiB/s, done.
+Resolving deltas: 100% (3/3), done.
+hait-bel@e2r9p3 ~/D/S/ex07 (master)> git add .
+warning: adding embedded git repository: ex07/Shell00
+hint: You've added another git repository inside your current repository.
+hint: Clones of the outer repository will not contain the contents of
+hint: the embedded repository and will not know how to obtain it.
+hint: If you meant to add a submodule, use:
+hint: 
+hint: 	git submodule add <url> ex07/Shell00
+hint: 
+hint: If you added this path by mistake, you can remove it from the
+hint: index with:
+hint: 
+hint: 	git rm --cached ex07/Shell00
+hint: 
+hint: See "git help submodule" for more information.
+hait-bel@e2r9p3 ~/D/S/ex07 (master)> cd ..
+hait-bel@e2r9p3 ~/D/Shell00 (master)> pwd
+/home/hait-bel/Desktop/Shell00
+hait-bel@e2r9p3 ~/D/Shell00 (master)> git add.
+git: 'add.' is not a git command. See 'git --help'.
+
+The most similar command is
+	add
+hait-bel@e2r9p3 ~/D/Shell00 (master) [1]> git add.
+git: 'add.' is not a git command. See 'git --help'.
+
+The most similar command is
+	add
+hait-bel@e2r9p3 ~/D/Shell00 (master) [1]> git add .
+hait-bel@e2r9p3 ~/D/Shell00 (master)> git commit -m "Diff"
+[master 66fc6a3] Diff
+ Committer: Hiba Ait Belmoumene <hait-bel@e2r9p3.1337.ma>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 3 files changed, 13 insertions(+)
+ create mode 160000 ex07/Shell00
+ create mode 100644 ex07/b
+hait-bel@e2r9p3 ~/D/Shell00 (master)> cd ..
+hait-bel@e2r9p3 ~/Desktop> cd Shell00
+hait-bel@e2r9p3 ~/D/Shell00 (master)> cd ex07
+hait-bel@e2r9p3 ~/D/S/ex07 (master)> ls
+b  Shell00
+hait-bel@e2r9p3 ~/D/S/ex07 (master)> cat -e a
+cat: a: No such file or directory
+hait-bel@e2r9p3 ~/D/S/ex07 (master) [1]> rm -rf SHELL00
+hait-bel@e2r9p3 ~/D/S/ex07 (master)> rm -rf Shell00
+hait-bel@e2r9p3 ~/D/S/ex07 (master)> pwd
+/home/hait-bel/Desktop/Shell00/ex07
+hait-bel@e2r9p3 ~/D/S/ex07 (master)> git push
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (6/6), 818 bytes | 818.00 KiB/s, done.
+Total 6 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: . Processing 1 references
+remote: Processed 1 references in total
+To vogsphere-v2-bg.1337.ma:vogsphere/intra-uuid-e6fdf243-6f5b-469d-a407-5a79faa278e9-6809019-hait-bel
+   4e555b2..66fc6a3  master -> master
+hait-bel@e2r9p3 ~/D/S/ex07 (master)> ls
+b
+hait-bel@e2r9p3 ~/D/S/ex07 (master)> cat b
+Episode V, A NEW H0PE It is a period of civil war
+Rebel spaceships, striking from a hidden base, have won their first victory against the evil Galactic Empire. 
+During the battle, Rebel spies managed to steal secret plans to the Empire's ultimate weapon, the STAR DEATH, an armored space station with enough power to destroy an entire planet.
+
+
+Pursued by the Empire's sinister agents,
+Princess Mehdi races home aboard her starship, custodian of the stolen plans that can save her people and restore the dictatorship to the galaxie..
+
+
+
+
+hait-bel@e2r9p3 ~/D/S/ex07 (master)> cat -e b
+Episode V, A NEW H0PE It is a period of civil war$
+Rebel spaceships, striking from a hidden base, have won their first victory against the evil Galactic Empire. $
+During the battle, Rebel spies managed to steal secret plans to the Empire's ultimate weapon, the STAR DEATH, an armored space station with enough power to destroy an entire planet.$
+$
+$
+Pursued by the Empire's sinister agents,$
+Princess Mehdi races home aboard her starship, custodian of the stolen plans that can save her people and restore the dictatorship to the galaxie..$
+$
+$
+$
+$
+hait-bel@e2r9p3 ~/D/S/ex07 (master)> cat -e a
+cat: a: No such file or directory
+hait-bel@e2r9p3 ~/D/S/ex07 (master) [1]> pwd
+/home/hait-bel/Desktop/Shell00/ex07
+hait-bel@e2r9p3 ~/D/S/ex07 (master)> pwd
+/home/hait-bel/Desktop/Shell00/ex07
+hait-bel@e2r9p3 ~/D/S/ex07 (master)> cd ..
+hait-bel@e2r9p3 ~/D/Shell00 (master)> cd ..
+hait-bel@e2r9p3 ~/Desktop> pwd
+/home/hait-bel/Desktop
+hait-bel@e2r9p3 ~/Desktop> ls
+shell00  Shell00
+hait-bel@e2r9p3 ~/Desktop> mkdir correction
+hait-bel@e2r9p3 ~/Desktop> cd correction/
+hait-bel@e2r9p3 ~/D/correction> LS
+LS: command not found
+hait-bel@e2r9p3 ~/D/correction [127]> PWD
+PWD: command not found
+hait-bel@e2r9p3 ~/D/correction [127]> pwd
+/home/hait-bel/Desktop/correction
+hait-bel@e2r9p3 ~/D/correction> ls
+hait-bel@e2r9p3 ~/D/correction> git clone git@vogsphere-v2-bg.1337.ma:vogsphere/intra-uuid-e6fdf243-6f5b-469d-a407-5a79faa278e9-6809019-hait-bel Shell00
+Cloning into 'Shell00'...
+remote: Enumerating objects: 29, done.
+remote: Counting objects: 100% (29/29), done.
+remote: Compressing objects: 100% (16/16), done.
+remote: Total 29 (delta 4), reused 0 (delta 0)
+Receiving objects: 100% (29/29), 31.14 KiB | 625.00 KiB/s, done.
+Resolving deltas: 100% (4/4), done.
+hait-bel@e2r9p3 ~/D/correction> ls
+Shell00
+hait-bel@e2r9p3 ~/D/correction> cd Shell00/
+hait-bel@e2r9p3 ~/D/c/Shell00 (master)> ls
+ex00  ex01  ex02  ex03  ex04  ex05  ex06  ex07
+hait-bel@e2r9p3 ~/D/c/Shell00 (master)> ls
+ex00  ex01  ex02  ex03  ex04  ex05  ex06  ex07
+hait-bel@e2r9p3 ~/D/c/Shell00 (master)> cd ex07
+hait-bel@e2r9p3 ~/D/c/S/ex07 (master)> ls
+b  Shell00
+hait-bel@e2r9p3 ~/D/c/S/ex07 (master)> rm -rf Shell00
+hait-bel@e2r9p3 ~/D/c/S/ex07 (master)> ls
+b
+hait-bel@e2r9p3 ~/D/c/S/ex07 (master)> cd ..
+hait-bel@e2r9p3 ~/D/c/Shell00 (master)> ls
+ex00  ex01  ex02  ex03  ex04  ex05  ex06  ex07
+hait-bel@e2r9p3 ~/D/c/Shell00 (master)> 
+
